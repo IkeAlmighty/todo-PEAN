@@ -4,7 +4,7 @@
   "description": "A Postgres, Express, Angular, and Node TODO app.",
   "main": "index.js",
   "scripts": {
-    "install": "npm i && cd client && npm i && cd ../server && npm i",
+    "install": "cd client && npm i && cd ../server && npm i",
     "dev": "concurrently \"cd client && npm run start\" \"cd server && npm run dev\""
   },
   "keywords": [],
