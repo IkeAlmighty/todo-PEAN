@@ -4,7 +4,7 @@ const sequelizeInstance = undefined;
 const DB_HOST = process.env.DB_HOST || 'localhost';
 const { DB_NAME, DB_USER, DB_PASSWORD } = process.env;
 
-async function sequelize() {
+async function getSequelize() {
     // lazy init sequelizeInstance
     if (!sequelizeInstance) {
         sequelizeInstance = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
@@ -32,4 +32,4 @@ async function sequelize() {
     }
 }
 
-export { sequelize }
+export { getSequelize }
