@@ -1,5 +1,5 @@
 import { sequelize } from '../db/connect.js';
-import { Model, DataTypes } from 'sequelize';
+import { DataTypes } from 'sequelize';
 
 const Todo = sequelize.define(
     'Todo',
